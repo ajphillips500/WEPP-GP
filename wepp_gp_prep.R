@@ -5,6 +5,8 @@ names(cli_index)
 print("Number of rows in Climate Index")
 dim(cli_index)
 
+devtools::install_github("jarad/WEPPR")
+devtools::install_github("jarad/DEPR")
 library(WEPPR)
 library(DEPR)
 
