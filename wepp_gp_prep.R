@@ -1,5 +1,6 @@
 # Load climate index
-cli_index <- read.csv(flowpath_xref_climate.txt, sep = " ")
+cli_index <- read.csv("flowpath_xref_climate.txt", sep = "\t",
+                      colClasses = c("numeric","numeric","character","numeric","character"))
 names(cli_index)
 print("Number of rows in Climate Index")
 dim(cli_index)
